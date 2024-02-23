@@ -1,0 +1,123 @@
+.modal__wrap .modal {
+  display: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #ede9ff;
+  border: 1px solid #2b0c7d;
+  position: absolute;
+  z-index: 1;
+}
+
+.box {
+  margin: 0 5px;
+  padding: 12px 16px;
+  border: 1px solid #2b0c7d;
+  border-radius: 20px;
+}
+.box.box--on {
+  background-color: rgba(43, 12, 125, 0.1);
+}
+
+@font-face {
+  font-family: "magnet";
+  src: url("../fonts/magnat/NeueMagnatTest-Light.otf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "magnet";
+  src: url("../fonts/magnat/NeueMagnatTest-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "magnet";
+  src: url("../fonts/magnat/NeueMagnatTest-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "magnet";
+  src: url("../fonts/magnat/NeueMagnatTest-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "magnet";
+  src: url("../fonts/magnat/NeueMagnatTest-Bold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "magnet";
+  src: url("../fonts/magnat/NeueMagnatTest-ExtraBold.otf");
+  font-weight: 900;
+}
+body {
+  font-family: "magnet", sans-serif;
+  font-weight: 400;
+  color: #2b0c7d;
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+  border-radius: 50%;
+  border: 1px solid #2b0c7d;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.grow, .grow-small {
+  transform: scale(4);
+  background: rgba(43, 12, 125, 0.2);
+  mix-blend-mode: difference;
+  border: none;
+}
+
+.grow-small {
+  transform: scale(2);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b0c7d;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+  color: #2b0c7d;
+}
+
+.about {
+  background-color: #2b0c7d;
+  color: #fff;
+}
+.about .cursor {
+  border: 1px solid #fff;
+}
+.about .grow, .about .grow-small {
+  background: rgba(255, 255, 255, 0.2);
+}
+.about .box {
+  border: 1px solid #fff;
+}
+.about .box.box--on {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.about a {
+  color: #fff;
+}
+.about a:hover, .about a:active {
+  color: #fff;
+}
+.about .modal__wrap .modal {
+  background: none;
+  border: 1px solid #fff;
+}/*# sourceMappingURL=common.css.map */
