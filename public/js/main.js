@@ -5,7 +5,7 @@ const originalSrc = logoImage.src;
 const currentURL = window.location.pathname;
 let newSrc = '';
 console.log(currentURL)
-if(currentURL === '/'){
+if(currentURL === '/' || currentURL === '/pages/index.html'){
   newSrc = '../images/logo_on.png'
 }else if(currentURL === '/about'){
   newSrc = '../images/logo-white_on.png'
