@@ -10,6 +10,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'pages/index.html'));
 });
+// 기본 라우트
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'pages/about.html'));
+});
 
 // 서버를 시작합니다.
 const port = process.env.PORT || 3000;

@@ -52,3 +52,7 @@ a{
 	text-decoration: none;
 	cursor:none;
 }
+a:link{
+	text-decoration: none;
+}
+

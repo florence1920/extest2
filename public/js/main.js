@@ -4,9 +4,10 @@ const logoImage = headerLogo.querySelector('img');
 const originalSrc = logoImage.src;
 const currentURL = window.location.pathname;
 let newSrc = '';
-if(currentURL === '/pages/index.html'){
+console.log(currentURL)
+if(currentURL === '/'){
   newSrc = '../images/logo_on.png'
-}else if(currentURL === '/pages/about.html'){
+}else if(currentURL === '/about'){
   newSrc = '../images/logo-white_on.png'
 }
 
