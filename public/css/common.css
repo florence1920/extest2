@@ -90,7 +90,7 @@ body {
   background-color: #2b0c7d;
 }
 
-a:hover, a:active {
+a:hover, a:active, a:link {
   text-decoration: none;
   color: #2b0c7d;
 }
@@ -114,7 +114,7 @@ a:hover, a:active {
 .about a {
   color: #fff;
 }
-.about a:hover, .about a:active {
+.about a:hover, .about a:active, .about a:link {
   color: #fff;
 }
 .about .modal__wrap .modal {
